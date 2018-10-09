@@ -1,0 +1,29 @@
+.menu{ /*selector de clase y de etiqueta*/
+	color: #C30CF4;
+	text-align: center;/*centra el texto*/
+}
+
+.texto{
+	text-align: justify;
+}
+html
+{
+	background-color: #E71DAE;
+}
+
+a{
+	text-decoration: none; /*quita el formato*/
+}
+
+li{
+	display: inline;/*Se explicara en la siguiente clase*/
+}
+
+ul{
+	list-style: none;/*quita el formato*/
+}
+
+table
+{
+	color: black;
+}

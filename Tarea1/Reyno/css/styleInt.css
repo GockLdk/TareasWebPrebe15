@@ -1,0 +1,39 @@
+.menu{ /*selector de clase y de etiqueta*/
+	color: #C30CF4;
+	text-align: center;/*centra el texto*/
+}
+html
+{
+	background-color: #000000;
+}
+h1{
+	color: white;
+}
+
+
+a{
+	text-decoration: none; /*quita el formato*/
+}
+
+li{
+	display: inline;/*Se explicara en la siguiente clase*/
+}
+
+ul{
+	list-style: none;/*quita el formato*/
+}
+
+table
+{
+	color: white;
+}
+
+#dos
+{
+	color: red;
+}
+
+#uno
+{
+	color: green;
+}

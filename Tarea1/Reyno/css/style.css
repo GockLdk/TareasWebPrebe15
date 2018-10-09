@@ -1,0 +1,34 @@
+.menu{ /*selector de clase y de etiqueta*/
+	color: #C30CF4;
+	text-align: center;/*centra el texto*/
+}
+html
+{
+	background-color: #CB30F5;
+}
+h1{
+	color: black;
+}
+
+/*centra solo la tabla
+table {  
+margin: auto;
+}*/
+
+
+a{
+	text-decoration: none; /*quita el formato*/
+}
+
+li{
+	display: inline;/*Se explicara en la siguiente clase*/
+}
+
+ul{
+	list-style: none;/*quita el formato*/
+}
+
+footer ul li a{ /*Selector descendente*/
+	color: #FFFFFF;
+	text-align: center;/*centra el texto*/
+}
