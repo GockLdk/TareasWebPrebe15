@@ -1,0 +1,32 @@
+img.fondo 
+{ 
+    /* Establecer la escala proporcional */
+    width: 100%;
+    height: 100%;
+                
+    /* Establecer posicion */
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+            
+@media screen and (max-width: 1024px)
+{
+img.fondo 
+ {
+  left: 50%;
+   margin-left: -512px; 
+  }
+}
+
+a{
+  text-decoration: none; /*quita el formato*/
+}
+
+li{
+  display: inline;/*Se explicara en la siguiente clase*/
+}
+
+ul{
+  list-style: none;/*quita el formato*/
+}

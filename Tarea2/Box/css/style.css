@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box; /**Optimizacion total del padding**/
+}
+
+/**Ejemplos de comparacion**/
+#example1 {		
+    width: 300px;
+    padding: 40px;    
+    border: 15px solid blue;
+}
+
+#example2 {
+    box-sizing: border-box;
+}
