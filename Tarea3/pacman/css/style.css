@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+/*importando fuentes*/
+#fondo
+{position: fixed; top: 0; left: 0; width: 100%; z-index: -1}
+
+h1{
+  color:#FFF;
+  font-family: 'Indie Flower', cursive;
+  margin:80px 100px;
+  position:relative;
+  text-align:center;
+}
+
+.pacman{
+  margin:100px 35px;
+}
+
+.parte-de-arriba{
+  background-color:yellow; 
+  height:100px;
+  width:200px;
+  border-radius:100px 100px 0px 0px;  /*redondear un rectangulo (medio circulo parte de arriba)*/
+  animation: comer1 1s infinite linear; /*animacion cada segundo*/ 
+}
+
+.parte-de-abajo{
+background-color:yellow;
+  height:100px;
+  width:200px;
+  border-radius:0 0 100px 100px; /*redondear un rectangulo (medio circulo parte de abajo)*/
+  animation: comer2 1s infinite linear; /*animacion cada segundo*/ 
+}
+
+.bolas {
+margin-top: -185px;
+margin-left:0px;
+width: 50px;
+height: 50px;
+border-radius: 80%;  /*En todo lo anterior definimos el tamaño de las bolas*/
+-moz-animation: tragar 1s linear 0s infinite; /*la animacion va a ser infinita y lineal*/
+-webkit-animation: tragar 1s linear 0s infinite;
+animation: tragar 1s linear 0s infinite;
+}   
+/*Animacion*/
+
+@keyframes comer1 { /*animacion de la parte de arriba*/
+  0%  {transform: rotate(0deg);} /*al 0% de nuestra animacion esta estatico*/
+  50%{transform: rotate(-35deg);} /*al 50% de nuestra animacion rota -35 grados*/
+  
+}
+@keyframes comer2 { /*animacion de la parte de abajo*/
+  0%  {transform: rotate(0deg);} /*al 0% de nuestra animacion esta estatico*/
+  50%{transform: rotate(35deg);} /*al 50% de nuestra animacion rota 35 grados*/
+}
+ /*Animacion para todo tipo de navegadores*/
+@-moz-keyframes comer1 {
+  0%  {transform: rotate(0deg);} 
+  50%{transform: rotate(-35deg);}
+  
+}
+@-moz-keyframes comer2 {
+  0%  {transform: rotate(0deg);} 
+  50%{transform: rotate(35deg);}
+}
+
+@-webkit-keyframes comer1 {
+  0%  {transform: rotate(0deg);} 
+  50%{transform: rotate(-35deg);}
+  
+}
+@-webkit-keyframes comer2 {
+  0%  {transform: rotate(0deg);} 
+  50%{transform: rotate(35deg);}
+}
+
+@keyframes tragar {  /*Aqui vamos a mostrar las sombras de nuestras bolas en diferentes posiciones*/
+  0% { box-shadow: 
+      100px 65px 0 0 black, 
+      300px 65px 0 0 black, 
+      500px 65px 0 0 black, 
+      700px 65px 0 0 black,
+      900px 65px 0 0 black, 
+      1100px 65px 0 0 black, 
+      1300px 65px 0 0 black;}
+
+  100% { box-shadow: /*Aca vamos a mostrar el avance de las bolas*/
+      0px 65px 0 0 black, 
+      100px 65px 0 0 black,
+      300px 65px 0 0 black, 
+      500px 65px 0 0 black, 
+      700px 65px 0 0 black, 
+      900px 65px 0 0 black, 
+      1100px 65px 0 0 black;}
+}
+ /*Animacion para demas navegadores*/
+@-moz-keyframes tragar {
+  0% { box-shadow: 
+      100px 65px 0 0 black, 
+      300px 65px 0 0 black, 
+      500px 65px 0 0 black, 
+      700px 65px 0 0 black,
+      900px 65px 0 0 black, 
+      1100px 65px 0 0 black, 
+      1300px 65px 0 0 black;}
+  
+100% { box-shadow: 
+      0px 65px 0 0 black, 
+      100px 65px 0 0 black,
+      300px 65px 0 0 black, 
+      500px 65px 0 0 black, 
+      700px 65px 0 0 black, 
+      900px 65px 0 0 black, 
+      1100px 65px 0 0 black;}
+}
+
+
+
+@-webkit-keyframes tragar {
+  0% { box-shadow: 
+      100px 65px 0 0 black, 
+      300px 65px 0 0 black, 
+      500px 65px 0 0 black, 
+      700px 65px 0 0 black,
+      900px 65px 0 0 black, 
+      1100px 65px 0 0 black, 
+      1300px 65px 0 0 black;}
+  
+100% { box-shadow: 
+      0px 65px 0 0 black, 
+      100px 65px 0 0 black,
+      300px 65px 0 0 black, 
+      500px 65px 0 0 black, 
+      700px 65px 0 0 black, 
+      900px 65px 0 0 black, 
+      1100px 65px 0 0 black;}
+}
