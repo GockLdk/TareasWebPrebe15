@@ -1,0 +1,71 @@
+.columna
+{
+	width: 30%;
+	float:left;
+	background: blue; /**Cambia de colores para identificar cuando hace los cambios en funcion del tamaño de la pantalla*/
+	margin: 10px;
+}
+ 	.tamaño
+ 	{
+ 		width: 50%;
+ 	}
+
+
+@media screen and (max-width: 1200px) and (min-width: 990px)
+{
+.columna
+{
+	width: 30%;
+	float:left;
+	background: blue;
+	
+}
+ 	.tamaño
+ 	{
+ 		width: 50%;
+ 	}
+
+}
+
+
+@media screen and (max-width: 990px) and (min-width: 600px)
+{
+	.columna
+	{
+		width: auto;
+		float: none;
+		background-color: orange;
+	}
+	
+}
+@media screen and (max-width: 600px) and (min-width: 400px)
+{
+	.columna
+	{
+		width: auto;
+		float: none;
+		background-color: purple;
+	}
+	
+ 	.tamaño
+ 	{
+ 		width: 50%;
+ 	
+ 	}
+}
+
+@media screen and (max-width: 400px) and (min-width: 0px)
+{
+	.columna
+	{
+		width: auto;
+		float: none;
+		background-color: pink;
+	}
+
+ 	.tamaño
+ 	{
+ 		width: 50%;
+ 	
+ 	}
+}
