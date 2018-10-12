@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="img/form.png">
+</head>
+<body>
+	<img id="fondo" src="img/scar.jpg" alt="fondito">
+	<form action="/my-handling-form-page" method="post">
+    <div>
+    	<h1>Registrese Austronauta</h1>
+        <label for="name"><b>Nombre:</b></label>
+        <input type="text" id="name" placeholder="Juanito"/>
+    </div>
+    <div>
+        <label for="mail"><b>E-mail:</b></label>
+        <input type="email" id="mail" placeholder="correo"/>
+    </div>
+    <div>
+    	<label for="check"><b>Hombre</b>
+    	<input type="checkbox" checked="true" id="check"></label>
+    	<br>
+    	<label for="check1"><b>Mujer</b>
+    	<input type="checkbox" checked="true" id="check1"></label>
+    </div>
+    <div>
+    	<label for="dat"><b>Fecha de nacimiento:</b></label>
+    	<input type="date" id="dat">
+    </div>
+    <div>
+    	<label for="country"><b>Seleccione su pais:</b></label>
+			<select id="country" >
+			<option value="1">Argentina</option>
+			<option value="2">España</option>
+			<option value="3">México</option>
+			<option value="4">Guatemala</option>
+			</select>	
+    </div>
+    <div>
+    	<label for="fil"><b>Solicitud</b>
+    	<input type="file" id="fil">
+    </div>
+    <div>
+        <label for="msg"><b>Mensajito:</b></label>
+        <textarea id="msg" placeholder="Hasta la vista baby"></textarea>
+    </div>
+    <div class="button">
+        <button type="submit">A despegar :)</button>
+    </div>
+</form>
+</body>
+</html>
