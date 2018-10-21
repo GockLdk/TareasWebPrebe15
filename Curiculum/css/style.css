@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=Chakra+Petch');
+@import url('https://fonts.googleapis.com/css?family=Changa');
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+h1
+{
+font-family: 'Chakra Petch', sans-serif;
+} 
+
+#titulo
+{
+	font-size: 30pt;
+}
+.info
+{
+	font-size: 12pt;
+  font-family: 'Changa', sans-serif;
+}
+
+.titu
+{
+	font-size: 25pt;
+}
+
+.marg
+{
+  margin-top: 25px;
+  padding-top: 20px;
+}
+
+.filo.h5
+{
+  font-size: 30pt;
+  font-family: 'Poiret One', cursive;
+}
+.filo
+{
+  font-size: 20pt;
+  font-family: 'Poiret One', cursive;
+}
+
+div[class~=chu]
+{
+  border-style: double;
+  border-color: black;
+  border-top-width: 5px;
+  border-right-width: 8px;
+  border-bottom-width: thick;
+  border-left-width: 8px;
+
+}
+div[class~=chi]
+{
+  border-style: ridge;
+  border-color: black;
+  border-top-width: 5px;
+  border-right-width: 8px;
+  border-bottom-width: thick;
+  border-left-width: 8px;
+
+}
+
+div[class~=cha]
+{
+  border-style: outset;
+  border-color: black;
+  border-top-width: 5px;
+  border-right-width: 8px;
+  border-bottom-width: thick;
+  border-left-width: thin;
+
+}
+
+.image img:hover{
+  transform: scale(1.4);
+  -webkit-transform: scale(1.4);
+}
